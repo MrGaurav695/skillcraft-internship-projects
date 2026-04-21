@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="navbar" id="navbar">
+        <a href="#home" class="brand">Nova<span>Flow</span></a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Design for the future</p>
+          <h1>Build beautiful digital experiences with clarity and confidence.</h1>
+          <p class="hero-text">
+            Launch your brand with an elegant responsive landing page that blends
+            modern gradients, smooth motion, and usability for every device.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-card glass-card">
+            <div class="hero-card-header">
+              <span class="hero-card-chip"></span>
+              <span>Featured Concept</span>
+            </div>
+            <h2>Modern Interface System</h2>
+            <p>Responsive components, thoughtful spacing, and subtle glassmorphism for premium appeal.</p>
+            <div class="hero-card-stats">
+              <div>
+                <strong>24%</strong>
+                <span>Conversion uplift</span>
+              </div>
+              <div>
+                <strong>3x</strong>
+                <span>Faster launch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-features" id="features">
+        <div class="section-heading reveal">
+          <p class="section-label">Core Benefits</p>
+          <h2>What makes our design stand out</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Fast Performance</h3>
+            <p>Optimized layout and interactions keep every screen smooth and engaging.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Modern Security</h3>
+            <p>Secure code patterns with clean architecture ensure stronger user trust.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Flexible Layouts</h3>
+            <p>Responsive sections adapt beautifully from mobile to large desktops.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+            <h3>Refined Aesthetics</h3>
+            <p>Soft gradients, glass effects, and polished spacing deliver premium visuals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-about" id="about">
+        <div class="about-grid reveal">
+          <div class="about-copy">
+            <p class="section-label">About Us</p>
+            <h2>Design systems that feel effortless and premium.</h2>
+            <p>
+              We combine creativity with structure to create landing pages that
+              convert, inspire, and scale. Every element is crafted to support a
+              consistent brand story.
+            </p>
+            <ul class="about-list">
+              <li><i class="fa-solid fa-check"></i> Thoughtful mobile-first foundation</li>
+              <li><i class="fa-solid fa-check"></i> Clean semantic structure</li>
+              <li><i class="fa-solid fa-check"></i> Motion and polish without clutter</li>
+            </ul>
+          </div>
+          <div class="about-visual glass-card">
+            <div class="about-image"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-projects" id="projects">
+        <div class="section-heading reveal">
+          <p class="section-label">Projects</p>
+          <h2>Featured services and solutions</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-meta">UI / UX</div>
+            <h3>Responsive Product Pages</h3>
+            <p>Crafted for conversion with clean typography, strong visuals, and clear CTAs.</p>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-meta">Branding</div>
+            <h3>Modern Identity Systems</h3>
+            <p>Color, iconography, and layout that create a cohesive digital presence.</p>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-meta">Webflow</div>
+            <h3>Landing Page Prototypes</h3>
+            <p>High-fidelity prototypes that demonstrate motion, spacing, and usability.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact">
+        <div class="section-heading reveal">
+          <p class="section-label">Contact</p>
+          <h2>Let’s work together on your next project.</h2>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your needs" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">NovaFlow</p>
+          <p>Crafting elevated digital experiences with clean, modern design.</p>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 NovaFlow. All rights reserved to Gaurav.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
