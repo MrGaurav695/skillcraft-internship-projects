@@ -11,4 +11,10 @@ This repository contains all tasks completed during my internship at SkillCraft 
 - Fully Responsive
 ---
 
+### 🔹 Task 02 – Stopwatch Web Application
+- Start / Pause / Reset functionality  
+- Lap Time Tracking  
+- Real-time updates  
+- Clean & Minimal UI
+--- 
 (More tasks coming soon...)
