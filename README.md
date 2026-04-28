@@ -17,4 +17,11 @@ This repository contains all tasks completed during my internship at SkillCraft 
 - Real-time updates  
 - Clean & Minimal UI
 --- 
+
+### 🔹 Task 02 (Alternative) – Calculator Web Application
+- Basic arithmetic operations (+, −, ×, ÷)  
+- Keyboard input support  
+- Error handling  
+- Responsive & clean UI
+---
 (More tasks coming soon...)
