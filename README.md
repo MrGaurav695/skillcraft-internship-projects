@@ -65,4 +65,4 @@ All tasks completed as part of the SkillCraft Technology Internship.
 Suggestions and feedback are always welcome!
 ---
 
-👨‍💻 Developed by ## Gaurav Rajesh Shirsath
+### 👨‍💻 Developed by Gaurav Rajesh Shirsath
