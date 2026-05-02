@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusFlow — Premium Task Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Productivity Studio</p>
+        <h1>FocusFlow</h1>
+        <p class="subtitle">Smart task management with priorities, due dates, filters, and theme persistence.</p>
+      </div>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
+        <span class="icon">🌗</span>
+        <span>Theme</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="panel new-task-panel glass-card" aria-labelledby="new-task-heading">
+        <div class="panel-header">
+          <div>
+            <h2 id="new-task-heading">Add new task</h2>
+            <p>Create a focused task with due date and priority.</p>
+          </div>
+        </div>
+
+        <form id="taskForm" class="task-form">
+          <div class="form-grid">
+            <label class="field">
+              <span>Task description</span>
+              <input id="taskText" type="text" placeholder="Describe the next action" required maxlength="120" />
+            </label>
+            <label class="field">
+              <span>Due date</span>
+              <input id="taskDueDate" type="date" />
+            </label>
+            <label class="field">
+              <span>Priority</span>
+              <select id="taskPriority">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="primary-btn">Add task</button>
+            <small class="hint">Press Enter or click to create.</small>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel status-panel glass-card">
+        <div class="status-grid">
+          <article class="status-card">
+            <p>Total tasks</p>
+            <strong id="totalCount">0</strong>
+          </article>
+          <article class="status-card">
+            <p>Completed</p>
+            <strong id="completedCount">0</strong>
+          </article>
+          <article class="status-card">
+            <p>Pending</p>
+            <strong id="pendingCount">0</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel control-panel glass-card" aria-labelledby="task-controls-heading">
+        <div class="panel-header">
+          <h2 id="task-controls-heading">Task board</h2>
+        </div>
+
+        <div class="controls-row">
+          <label class="search-field">
+            <span class="visually-hidden">Search tasks</span>
+            <input id="searchInput" type="search" placeholder="Search tasks..." />
+          </label>
+          <div class="actions-group">
+            <div class="segmented-control" role="group" aria-label="Task filters">
+              <button type="button" class="filter-btn active" data-filter="all">All</button>
+              <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+              <button type="button" class="filter-btn" data-filter="pending">Pending</button>
+            </div>
+            <label class="sort-select">
+              <span class="visually-hidden">Sort tasks</span>
+              <select id="sortSelect">
+                <option value="created">Newest first</option>
+                <option value="due">Due date</option>
+                <option value="priority">Priority</option>
+                <option value="status">Status</option>
+              </select>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel list-panel glass-card" aria-labelledby="task-list-heading">
+        <div class="panel-header">
+          <div>
+            <h2 id="task-list-heading">Your tasks</h2>
+            <p>Drag tasks to reorder. Due alerts highlight urgent work.</p>
+          </div>
+          <div id="dueAlert" class="due-alert hidden" role="status" aria-live="polite"></div>
+        </div>
+
+        <ul id="taskList" class="task-list" aria-live="polite"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

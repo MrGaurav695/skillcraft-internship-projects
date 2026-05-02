@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">HTML / CSS / JavaScript</p>
+        <h1>Premium Tic Tac Toe</h1>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="icon">🌙</span>
+        <span class="label">Dark</span>
+      </button>
+    </header>
+
+    <section class="game-panel">
+      <div class="summary-card">
+        <h2>Game mode</h2>
+        <div class="mode-select">
+          <label>
+            <input type="radio" name="mode" value="two" checked />
+            Two-player
+          </label>
+          <label>
+            <input type="radio" name="mode" value="single" />
+            Single-player
+          </label>
+        </div>
+
+        <div class="difficulty-set" id="difficultySet">
+          <p>AI difficulty</p>
+          <label>
+            <input type="radio" name="difficulty" value="easy" checked />
+            Easy
+          </label>
+          <label>
+            <input type="radio" name="difficulty" value="medium" />
+            Medium
+          </label>
+          <label>
+            <input type="radio" name="difficulty" value="hard" />
+            Hard
+          </label>
+        </div>
+      </div>
+
+      <div class="board-card">
+        <div class="status-panel">
+          <div class="status-label">Status</div>
+          <div class="status-value" id="statusText">X starts the game</div>
+        </div>
+
+        <div class="board" id="board" aria-label="Tic Tac Toe board" role="grid">
+          <button class="cell" data-index="0" aria-label="Cell 1" role="button"></button>
+          <button class="cell" data-index="1" aria-label="Cell 2" role="button"></button>
+          <button class="cell" data-index="2" aria-label="Cell 3" role="button"></button>
+          <button class="cell" data-index="3" aria-label="Cell 4" role="button"></button>
+          <button class="cell" data-index="4" aria-label="Cell 5" role="button"></button>
+          <button class="cell" data-index="5" aria-label="Cell 6" role="button"></button>
+          <button class="cell" data-index="6" aria-label="Cell 7" role="button"></button>
+          <button class="cell" data-index="7" aria-label="Cell 8" role="button"></button>
+          <button class="cell" data-index="8" aria-label="Cell 9" role="button"></button>
+        </div>
+
+        <div class="actions-row">
+          <button class="btn primary" id="newGameBtn">New Game</button>
+          <button class="btn secondary" id="resetScoreBtn">Reset Score</button>
+        </div>
+      </div>
+
+      <aside class="info-card">
+        <div class="scoreboard">
+          <h2>Scoreboard</h2>
+          <div class="score-row">
+            <span>X wins</span>
+            <strong id="scoreX">0</strong>
+          </div>
+          <div class="score-row">
+            <span>O wins</span>
+            <strong id="scoreO">0</strong>
+          </div>
+          <div class="score-row">
+            <span>Draws</span>
+            <strong id="scoreDraw">0</strong>
+          </div>
+        </div>
+
+        <div class="history-panel">
+          <div class="history-header">
+            <h2>Recent results</h2>
+            <button class="history-clear" id="clearHistoryBtn">Clear</button>
+          </div>
+          <ul class="history-list" id="historyList" aria-live="polite"></ul>
+        </div>
+      </aside>
+    </section>
+
+    <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
