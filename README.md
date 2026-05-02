@@ -33,4 +33,36 @@ This repository contains all tasks completed during my internship at SkillCraft 
 - Score tracking with performance insights  
 - Session persistence using localStorage
 ---
-(More tasks coming soon...)
+
+### 🔹 Task 03 (Alternative) – Tic Tac Toe Web Application
+- Two-player interactive gameplay  
+- Turn-based logic (X / O system)  
+- Win & draw detection logic  
+- Game reset functionality  
+- Responsive UI  
+---
+
+### 🔹 Task 04 – FocusFlow (To-Do Web Application)
+- Add, edit, and delete tasks  
+- Priority levels & due date tracking  
+- Filtering, searching & sorting system  
+- Drag & drop task reordering  
+- Persistent storage using localStorage  
+- Light/Dark theme toggle  
+---
+
+## 🚧 Completed Internship
+All tasks completed as part of the SkillCraft Technology Internship.
+---
+
+## 🛠 Tech Stack
+- HTML  
+- CSS  
+- JavaScript  
+---
+
+## 📬 Feedback
+Suggestions and feedback are always welcome!
+---
+
+👨‍💻 Developed by **Gaurav Rajesh Shirsath**  
