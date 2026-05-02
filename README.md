@@ -24,4 +24,13 @@ This repository contains all tasks completed during my internship at SkillCraft 
 - Error handling  
 - Responsive & clean UI
 ---
+
+### 🔹 Task 03 – Quiz Web Application
+- Category & difficulty-based question filtering  
+- Real-time timer with auto-submit  
+- Dynamic question rendering & progress tracking  
+- Answer validation with explanation feedback  
+- Score tracking with performance insights  
+- Session persistence using localStorage
+---
 (More tasks coming soon...)
