@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnFlow Quiz App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="quiz-card welcome-card active" id="welcome-screen">
+      <div class="hero-panel">
+        <p class="eyebrow">Interactive learning</p>
+        <h1>LearnFlow Quiz</h1>
+        <p class="lead">Test your knowledge with adaptive questions, instant feedback, and a polished study experience.</p>
+      </div>
+      <div class="start-panel">
+        <div class="select-group">
+          <label for="category-select">Select category</label>
+          <select id="category-select">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+        <div class="select-group">
+          <label for="difficulty-select">Select difficulty</label>
+          <select id="difficulty-select">
+            <option value="all">All levels</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <button class="primary-button" id="start-button">Start quiz</button>
+      </div>
+      <div class="meta-row">
+        <div>
+          <p class="meta-label">High score</p>
+          <strong id="high-score">0</strong>
+        </div>
+        <div>
+          <p class="meta-label">Questions</p>
+          <strong id="question-count">0</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-card quiz-panel" id="quiz-screen" aria-live="polite">
+      <div class="quiz-header">
+        <div class="progress-label">Question <span id="current-step">1</span> of <span id="total-steps">10</span></div>
+        <div class="timer-box">
+          <span>Time left</span>
+          <strong id="timer-value">15s</strong>
+        </div>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+
+      <div class="question-card" id="question-card">
+        <p class="question-label" id="question-category"></p>
+        <h2 id="question-text"></h2>
+        <div class="options-grid" id="options-container"></div>
+      </div>
+
+      <div class="quiz-footer">
+        <button class="secondary-button" id="next-button" disabled>Next question</button>
+      </div>
+    </section>
+
+    <section class="quiz-card result-panel" id="result-screen">
+      <div class="result-hero">
+        <p class="eyebrow">Quiz complete</p>
+        <h1>Final result</h1>
+        <p class="lead">Review your performance and see how you can improve.</p>
+      </div>
+      <div class="result-summary">
+        <div class="score-card">
+          <p>Score</p>
+          <strong id="final-score">0 / 0</strong>
+        </div>
+        <div class="score-card">
+          <p>Percentage</p>
+          <strong id="final-percentage">0%</strong>
+        </div>
+        <div class="score-card">
+          <p>Performance</p>
+          <strong id="performance-message">Needs improvement</strong>
+        </div>
+      </div>
+      <div class="review-panel" id="review-panel"></div>
+      <div class="result-actions">
+        <button class="secondary-button" id="restart-button">Restart quiz</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
